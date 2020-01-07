@@ -1,0 +1,2 @@
+# require "lorentz/contract/param"
+
