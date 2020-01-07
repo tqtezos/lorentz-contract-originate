@@ -1,0 +1,189 @@
+---
+config:
+  base-config:
+    tezos_client_path: tezos-client -A rpcalpha.tzbeta.net -P 443 -S
+    user_address: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr
+    param_path: "/Users/michaelklein/Coding/forwarder-contract"
+    stack_path: "/Users/michaelklein/Coding/forwarder-contract/stack"
+originated:
+  ValidatedForwarder1:
+    address: KT1V1YYzcEtZywrQWsJyRPVMV3m9R6qwXRV1
+    config: "$base-config"
+    duration: 29.596708
+  ValidatedForwarderExpired:
+    address: KT1NQsAMoZKWzPA5CQdX3tEFeGekuHRGjfit
+    config: "$base-config"
+    duration: 57.594561
+ran:
+  RejectsNonWhitelistedUser:
+    contract: ValidatedForwarder1
+    parameters:
+      received-amount: 3
+      from-user: bob
+    config: "$base-config"
+    duration: 4.643017
+    error:
+    - 'Warning:'
+    - "  "
+    - "                 This is NOT the Tezos Mainnet."
+    - "  "
+    - "     The node you are connecting to claims to be running on the"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK."
+    - "          Do NOT use your fundraiser keys on this network."
+    - "          Alphanet is a testing network, with free tokens."
+    - ''
+    - Waiting for the node to be bootstrapped before injection...
+    - 'Current head: BKu7pE9n6DPt (timestamp: 2020-01-07T21:53:28-00:00, validation:
+      2020-01-07T21:53:39-00:00)'
+    - Node is bootstrapped, ready for injecting operations.
+    - 'This simulation failed:'
+    - "  Manager signed operations:"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr"
+    - "    Fee to the baker: ꜩ0"
+    - "    Expected counter: 71379"
+    - "    Gas limit: 800000"
+    - "    Storage limit: 60000 bytes"
+    - "    Transaction:"
+    - "      Amount: ꜩ0"
+    - "      From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr"
+    - "      To: KT1V1YYzcEtZywrQWsJyRPVMV3m9R6qwXRV1"
+    - '      Parameter: (Left (Right (Left (Left (Pair 3 "bob")))))'
+    - "      This operation FAILED."
+    - ''
+    - 'Runtime error in contract KT1V1YYzcEtZywrQWsJyRPVMV3m9R6qwXRV1:'
+    - At line 94 characters 84 to 92,
+    - script reached FAILWITH instruction
+    - with "not in whitelist"
+    - 'Fatal error:'
+    - "  transfer simulation failed"
+  RejectsTokenLimitExceeded:
+    contract: ValidatedForwarder1
+    parameters:
+      received-amount: 12
+      from-user: alice
+    config: "$base-config"
+    duration: 4.64943
+    error:
+    - 'Warning:'
+    - "  "
+    - "                 This is NOT the Tezos Mainnet."
+    - "  "
+    - "     The node you are connecting to claims to be running on the"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK."
+    - "          Do NOT use your fundraiser keys on this network."
+    - "          Alphanet is a testing network, with free tokens."
+    - ''
+    - Waiting for the node to be bootstrapped before injection...
+    - 'Current head: BKu7pE9n6DPt (timestamp: 2020-01-07T21:53:28-00:00, validation:
+      2020-01-07T21:53:43-00:00)'
+    - Node is bootstrapped, ready for injecting operations.
+    - 'This simulation failed:'
+    - "  Manager signed operations:"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr"
+    - "    Fee to the baker: ꜩ0"
+    - "    Expected counter: 71379"
+    - "    Gas limit: 800000"
+    - "    Storage limit: 60000 bytes"
+    - "    Transaction:"
+    - "      Amount: ꜩ0"
+    - "      From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr"
+    - "      To: KT1V1YYzcEtZywrQWsJyRPVMV3m9R6qwXRV1"
+    - '      Parameter: (Left (Right (Left (Left (Pair 12 "alice")))))'
+    - "      This operation FAILED."
+    - ''
+    - 'Runtime error in contract KT1V1YYzcEtZywrQWsJyRPVMV3m9R6qwXRV1:'
+    - At line 99 characters 84 to 92,
+    - script reached FAILWITH instruction
+    - with "token limit exceeded"
+    - 'Fatal error:'
+    - "  transfer simulation failed"
+  AcceptsNonExpiredWhitelistedWithinLimit:
+    contract: ValidatedForwarder1
+    parameters:
+      received-amount: 3
+      from-user: alice
+    config: "$base-config"
+    duration: 17.856266
+    operation_hash: oorKMKXFvtyYCxkFpnai6wVyozTPUC3snFHs1AhhibotvovAmxW
+  RejectsTokenLimitExceededAfterTransfer:
+    contract: ValidatedForwarder1
+    parameters:
+      received-amount: 8
+      from-user: alice
+    config: "$base-config"
+    duration: 4.603464
+    error:
+    - 'Warning:'
+    - "  "
+    - "                 This is NOT the Tezos Mainnet."
+    - "  "
+    - "     The node you are connecting to claims to be running on the"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK."
+    - "          Do NOT use your fundraiser keys on this network."
+    - "          Alphanet is a testing network, with free tokens."
+    - ''
+    - Waiting for the node to be bootstrapped before injection...
+    - 'Current head: BLiw18sQReQQ (timestamp: 2020-01-07T21:53:58-00:00, validation:
+      2020-01-07T21:54:06-00:00)'
+    - Node is bootstrapped, ready for injecting operations.
+    - 'This simulation failed:'
+    - "  Manager signed operations:"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr"
+    - "    Fee to the baker: ꜩ0"
+    - "    Expected counter: 71380"
+    - "    Gas limit: 800000"
+    - "    Storage limit: 60000 bytes"
+    - "    Transaction:"
+    - "      Amount: ꜩ0"
+    - "      From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr"
+    - "      To: KT1V1YYzcEtZywrQWsJyRPVMV3m9R6qwXRV1"
+    - '      Parameter: (Left (Right (Left (Left (Pair 8 "alice")))))'
+    - "      This operation FAILED."
+    - ''
+    - 'Runtime error in contract KT1V1YYzcEtZywrQWsJyRPVMV3m9R6qwXRV1:'
+    - At line 99 characters 84 to 92,
+    - script reached FAILWITH instruction
+    - with "token limit exceeded"
+    - 'Fatal error:'
+    - "  transfer simulation failed"
+  RejectsBecauseExpired:
+    contract: ValidatedForwarderExpired
+    parameters:
+      received-amount: 3
+      from-user: alice
+    config: "$base-config"
+    duration: 5.769269
+    error:
+    - 'Warning:'
+    - "  "
+    - "                 This is NOT the Tezos Mainnet."
+    - "  "
+    - "     The node you are connecting to claims to be running on the"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK."
+    - "          Do NOT use your fundraiser keys on this network."
+    - "          Alphanet is a testing network, with free tokens."
+    - ''
+    - Waiting for the node to be bootstrapped before injection...
+    - 'Current head: BM71Mr9ozfXg (timestamp: 2020-01-07T21:54:58-00:00, validation:
+      2020-01-07T21:55:33-00:00)'
+    - Node is bootstrapped, ready for injecting operations.
+    - 'This simulation failed:'
+    - "  Manager signed operations:"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr"
+    - "    Fee to the baker: ꜩ0"
+    - "    Expected counter: 71382"
+    - "    Gas limit: 800000"
+    - "    Storage limit: 60000 bytes"
+    - "    Transaction:"
+    - "      Amount: ꜩ0"
+    - "      From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr"
+    - "      To: KT1NQsAMoZKWzPA5CQdX3tEFeGekuHRGjfit"
+    - '      Parameter: (Left (Right (Left (Left (Pair 3 "alice")))))'
+    - "      This operation FAILED."
+    - ''
+    - 'Runtime error in contract KT1NQsAMoZKWzPA5CQdX3tEFeGekuHRGjfit:'
+    - At line 14 characters 84 to 92,
+    - script reached FAILWITH instruction
+    - with "expired"
+    - 'Fatal error:'
+    - "  transfer simulation failed"

@@ -1,15 +1,3 @@
-# Lorentz::Contract::Originate
-
-Use `.yaml` files to specify:
-- users
-- contract originations
-- transactions
-
-in a declarative manner, a la `Makefile`'s.
-
-For example:
-
-```yaml
 config:
   base-config: &base-config
     tezos_client_path:
@@ -50,46 +38,47 @@ do:
         from-user: "bob"
       burn_cap: '0.000001'
       expect_failure: true
-```
 
+  - run:
+      <<: *validate-forwarder
+      alias: RejectsTokenLimitExceeded
+      parameters:
+        received-amount: 12
+        from-user: "alice"
+      burn_cap: '0.000001'
+      expect_failure: true
 
-## Installation
+  - run:
+      <<: *validate-forwarder
+      alias: AcceptsNonExpiredWhitelistedWithinLimit
+      parameters:
+        received-amount: 3
+        from-user: "alice"
+      expect_failure: false
 
-Add this line to your application's Gemfile:
+  - run:
+      <<: *validate-forwarder
+      alias: RejectsTokenLimitExceededAfterTransfer
+      parameters:
+        received-amount: 8
+        from-user: "alice"
+      expect_failure: true
 
-```ruby
-gem 'lorentz-contract-originate'
-```
+  - originate:
+      <<: *originate-forwarder
+      alias: ValidatedForwarderExpired
+      initial_storage:
+        dstoken-address: $Alice
+        whitelisted-investors: '"[\"alice\"]"'
+        token-limit: 10
+        expiration-date: "$(date -u -d '9:00 a week ago' +%FT%T.%NZ)" 
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install lorentz-contract-originate
-
-
-## Usage
-
-```bash
-❯❯❯ bundle exec ruby exe/lorentz-contract-originate.rb test.yaml
-```
-
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/tqtezos/lorentz-contract-originate.
-
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+  - run:
+      <<: *validate-forwarder
+      alias: RejectsBecauseExpired
+      contract: ValidatedForwarderExpired
+      parameters:
+        received-amount: 3
+        from-user: "alice"
+      expect_failure: true
 
