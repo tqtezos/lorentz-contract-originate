@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/lorentz-contract-originate.svg)](https://badge.fury.io/rb/lorentz-contract-originate)
+
 # Lorentz::Contract::Originate
 
 Use `.yaml` files to specify:
