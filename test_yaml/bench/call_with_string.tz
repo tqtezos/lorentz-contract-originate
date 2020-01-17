@@ -1,0 +1,21 @@
+parameter unit;
+storage (pair string address);
+code {
+  CDR;
+  DUP;
+  DUP;
+  DIP {
+    DIP {
+      CDR;
+      CONTRACT string;
+      ASSERT_SOME;
+      PUSH mutez 0;
+    };
+    CAR;
+    TRANSFER_TOKENS;
+    DIP { NIL operation };
+    CONS;
+  };
+  SWAP;
+  PAIR;
+};
