@@ -1,0 +1,631 @@
+config:
+  base-config: &base-config
+    tezos_client_path:
+      "tezos-client -A rpcalpha.tzbeta.net -P 443 -S"
+    user_address:
+      tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr
+    param_path:
+      /Users/michaelklein/Coding/forwarder-contract
+    # stack_path:
+    #   /Users/michaelklein/Coding/forwarder-contract/stack
+
+do:
+  - user:
+      name:
+        Alice
+      address:
+        tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr
+
+  - originate:
+      alias: ContractCreator
+      config: $base-config
+      command: print_file.rb create_contract.tz
+      storage_command: drop_storage.rb
+      initial_storage:
+      burn_cap: '0.392'
+
+  - run: &call-contract-creator
+      alias: CallContractCreator1
+      config: $base-config
+      contract: ContractCreator
+      command: call_nat_param.rb
+      parameters:
+        value: 1
+      burn_cap: '0.289'
+
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator2
+      parameters:
+        value: 2
+      burn_cap: '0.578'
+
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator3
+      parameters:
+        value: 3
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator4
+      parameters:
+        value: 4
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator5
+      parameters:
+        value: 5
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator6
+      parameters:
+        value: 6
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator7
+      parameters:
+        value: 7
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator8
+      parameters:
+        value: 8
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator9
+      parameters:
+        value: 9
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator10
+      parameters:
+        value: 10
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator11
+      parameters:
+        value: 11
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator12
+      parameters:
+        value: 12
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator13
+      parameters:
+        value: 13
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator14
+      parameters:
+        value: 14
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator15
+      parameters:
+        value: 15
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator16
+      parameters:
+        value: 16
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator17
+      parameters:
+        value: 17
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator18
+      parameters:
+        value: 18
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator19
+      parameters:
+        value: 19
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator20
+      parameters:
+        value: 20
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator21
+      parameters:
+        value: 21
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator22
+      parameters:
+        value: 22
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator23
+      parameters:
+        value: 23
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator24
+      parameters:
+        value: 24
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator25
+      parameters:
+        value: 25
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator26
+      parameters:
+        value: 26
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator27
+      parameters:
+        value: 27
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator28
+      parameters:
+        value: 28
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator29
+      parameters:
+        value: 29
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator30
+      parameters:
+        value: 30
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator31
+      parameters:
+        value: 31
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator32
+      parameters:
+        value: 32
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator33
+      parameters:
+        value: 33
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator34
+      parameters:
+        value: 34
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator35
+      parameters:
+        value: 35
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator36
+      parameters:
+        value: 36
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator37
+      parameters:
+        value: 37
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator38
+      parameters:
+        value: 38
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator39
+      parameters:
+        value: 39
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator40
+      parameters:
+        value: 40
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator41
+      parameters:
+        value: 41
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator42
+      parameters:
+        value: 42
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator43
+      parameters:
+        value: 43
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator44
+      parameters:
+        value: 44
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator45
+      parameters:
+        value: 45
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator46
+      parameters:
+        value: 46
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator47
+      parameters:
+        value: 47
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator48
+      parameters:
+        value: 48
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator49
+      parameters:
+        value: 49
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator50
+      parameters:
+        value: 50
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator51
+      parameters:
+        value: 51
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator52
+      parameters:
+        value: 52
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator53
+      parameters:
+        value: 53
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator54
+      parameters:
+        value: 54
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator55
+      parameters:
+        value: 55
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator56
+      parameters:
+        value: 56
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator57
+      parameters:
+        value: 57
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator58
+      parameters:
+        value: 58
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator59
+      parameters:
+        value: 59
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator60
+      parameters:
+        value: 60
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator61
+      parameters:
+        value: 61
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator62
+      parameters:
+        value: 62
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator63
+      parameters:
+        value: 63
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator64
+      parameters:
+        value: 64
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator65
+      parameters:
+        value: 65
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator66
+      parameters:
+        value: 66
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator67
+      parameters:
+        value: 67
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator68
+      parameters:
+        value: 68
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator69
+      parameters:
+        value: 69
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator70
+      parameters:
+        value: 70
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator71
+      parameters:
+        value: 71
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator72
+      parameters:
+        value: 72
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator73
+      parameters:
+        value: 73
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator74
+      parameters:
+        value: 74
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator75
+      parameters:
+        value: 75
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator76
+      parameters:
+        value: 76
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator77
+      parameters:
+        value: 77
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator78
+      parameters:
+        value: 78
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator79
+      parameters:
+        value: 79
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator80
+      parameters:
+        value: 80
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator81
+      parameters:
+        value: 81
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator82
+      parameters:
+        value: 82
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator83
+      parameters:
+        value: 83
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator84
+      parameters:
+        value: 84
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator85
+      parameters:
+        value: 85
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator86
+      parameters:
+        value: 86
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator87
+      parameters:
+        value: 87
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator88
+      parameters:
+        value: 88
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator89
+      parameters:
+        value: 89
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator90
+      parameters:
+        value: 90
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator91
+      parameters:
+        value: 91
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator92
+      parameters:
+        value: 92
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator93
+      parameters:
+        value: 93
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator94
+      parameters:
+        value: 94
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator95
+      parameters:
+        value: 95
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator96
+      parameters:
+        value: 96
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator97
+      parameters:
+        value: 97
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator98
+      parameters:
+        value: 98
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator99
+      parameters:
+        value: 99
+      burn_cap: '10000'
+  - run:
+      <<: *call-contract-creator
+      alias: CallContractCreator100
+      parameters:
+        value: 100
+      burn_cap: '10000'
+

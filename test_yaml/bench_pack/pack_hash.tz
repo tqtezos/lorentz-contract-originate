@@ -1,0 +1,11 @@
+parameter (pair address nat);
+storage unit;
+code {
+  CAR;
+  PACK;
+  BLAKE2B;
+  DROP;
+  UNIT;
+  NIL operation;
+  PAIR
+}
