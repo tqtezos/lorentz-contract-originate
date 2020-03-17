@@ -1,0 +1,1548 @@
+---
+config:
+  base-config:
+    tezos_client_path: tezos-client -A rpcalpha.tzbeta.net -P 443 -S
+    user_address: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr
+    param_path: "/Users/michaelklein/Coding/forwarder-contract"
+originated:
+  DropNatContract:
+    config: "$base-config"
+    duration: 113.800476
+    address: KT1UjRpobstWJDErU7oH2Ho4AutQXw3CZehv
+    paid_storage_size_diff: '38'
+    consumed_gas: '10911'
+  DropStringContract:
+    config: "$base-config"
+    duration: 67.397018
+    address: KT1BtZncczLzrPD9dF3k8o4rDoRsK7QWWjHo
+    paid_storage_size_diff: '38'
+    consumed_gas: '10911'
+  NatCaller1:
+    config: "$base-config"
+    duration: 51.338314
+    address: KT1JzkeARxn1FV9r45swTgBqKnTeXhLj4P2d
+    paid_storage_size_diff: '142'
+    consumed_gas: '13482'
+  NatCaller2:
+    config: "$base-config"
+    duration: 56.290593
+    address: KT1QCsiPuaaXLshDb11gtSyMFvm98jLnkdPf
+    paid_storage_size_diff: '142'
+    consumed_gas: '13482'
+  NatCaller4:
+    config: "$base-config"
+    duration: 51.872436
+    address: KT1Vt1XxAUHNHYrY2MY9EvfnnKfjaAUAGf5F
+    paid_storage_size_diff: '142'
+    consumed_gas: '13482'
+  NatCaller8:
+    config: "$base-config"
+    duration: 45.023975
+    address: KT1TJBpzeP3Vu7mydti1GQM2MS68qgdjUyRn
+    paid_storage_size_diff: '142'
+    consumed_gas: '13482'
+  NatCaller16:
+    config: "$base-config"
+    duration: 37.363371
+    address: KT1LV8pxQXTeDan6oYTTWQ3BF1KsHp3Qo8dF
+    paid_storage_size_diff: '142'
+    consumed_gas: '13482'
+  NatCaller32:
+    config: "$base-config"
+    duration: 49.425627
+    address: KT1Saz1PJLciVJqLELxS873sNEBnXAJepeFz
+    paid_storage_size_diff: '142'
+    consumed_gas: '13482'
+  NatCaller64:
+    config: "$base-config"
+    duration: 98.729656
+    address: KT1SiHRxuMyPjtsyuNeJYwQ2KBXcWgG1WrSW
+    paid_storage_size_diff: '143'
+    consumed_gas: '13497'
+  NatCaller128:
+    config: "$base-config"
+    duration: 74.184
+    address: KT1QCH3k5S7XqCjxpnD3hNs6M4mjFqntJNrK
+    paid_storage_size_diff: '143'
+    consumed_gas: '13497'
+  NatCaller256:
+    config: "$base-config"
+    duration: 23.661185
+    address: KT1PoKsh5UNxh5cg2h5QFmPY4ZAD6E584xy8
+    paid_storage_size_diff: '143'
+    consumed_gas: '13497'
+  NatCaller512:
+    config: "$base-config"
+    duration: 53.840454
+    address: KT1K4XEeXkjU69zeGeUCESgyftj6M2TNxveB
+    paid_storage_size_diff: '143'
+    consumed_gas: '13497'
+  NatCaller1024:
+    config: "$base-config"
+    duration: 128.133731
+    address: KT1MvYMr52Rm3pxrKYPHhQyLZEKyoGm3SP61
+    paid_storage_size_diff: '143'
+    consumed_gas: '13497'
+  NatCaller2048:
+    config: "$base-config"
+    duration: 105.218443
+    address: KT1AhYJa1qaxPeUm7YrP5AvnuFXVaqUN2ERa
+    paid_storage_size_diff: '143'
+    consumed_gas: '13497'
+  NatCaller4096:
+    config: "$base-config"
+    duration: 43.775968
+    address: KT1BExafcAHq2GS3KuLwUqujJd8gZzscaMTx
+    paid_storage_size_diff: '143'
+    consumed_gas: '13497'
+  NatCaller8192:
+    config: "$base-config"
+    duration: 71.284055
+    address: KT1FFEkstZhiPXQiJ5gJUNZ998eEHpecdRm7
+    paid_storage_size_diff: '144'
+    consumed_gas: '13514'
+  NatCaller16384:
+    config: "$base-config"
+    duration: 74.193422
+    address: KT1J3NAzrwWbxh869x58Lwi2zPdhftn9jHFE
+    paid_storage_size_diff: '144'
+    consumed_gas: '13514'
+  StringCaller1:
+    config: "$base-config"
+    duration: 32.237826
+    address: KT1RpbuVfPhkVxjhuEygwR3YkL91e1z8dXcD
+    paid_storage_size_diff: '146'
+    consumed_gas: '13544'
+  StringCaller2:
+    config: "$base-config"
+    duration: 60.728813
+    address: KT1KfBWbUMWW9ppuBnadxXKwuckGSgp4Pzw8
+    paid_storage_size_diff: '147'
+    consumed_gas: '13559'
+  StringCaller4:
+    config: "$base-config"
+    duration: 58.701698
+    address: KT1BtMw7nFZgtLwPTBS85okPK5eNwdGgtsq2
+    paid_storage_size_diff: '149'
+    consumed_gas: '13589'
+  StringCaller8:
+    config: "$base-config"
+    duration: 51.769768
+    address: KT1PPe4Vrybh4P26voDWoDbLCNSvMzSAkBK5
+    paid_storage_size_diff: '153'
+    consumed_gas: '13651'
+  StringCaller16:
+    config: "$base-config"
+    duration: 61.87498
+    address: KT1VCKiiS2D59qHYC8MK8WLqXSkGoMs1jyfV
+    paid_storage_size_diff: '161'
+    consumed_gas: '13779'
+  StringCaller32:
+    config: "$base-config"
+    duration: 108.445367
+    address: KT1LBsoV6Caf9mTxU82zd4GjYS8AkMyx89kG
+    paid_storage_size_diff: '177'
+    consumed_gas: '14035'
+  StringCaller64:
+    config: "$base-config"
+    duration: 90.847111
+    address: KT1Fxb9YYX3yGNTHwfvwahqYnivFjGQZ9Z1p
+    paid_storage_size_diff: '209'
+    consumed_gas: '14547'
+  StringCaller128:
+    config: "$base-config"
+    duration: 60.719334
+    address: KT19kvkXtquq7aj2sAMQXGwJHBuBrnwzMPrg
+    paid_storage_size_diff: '273'
+    consumed_gas: '15571'
+  StringCaller256:
+    config: "$base-config"
+    duration: 23.40679
+    address: KT1TcD4fj5tvuULVFwre5pav8pDgxsn82hvU
+    paid_storage_size_diff: '401'
+    consumed_gas: '17619'
+  StringCaller512:
+    config: "$base-config"
+    duration: 39.103856
+    address: KT1Jn9S33TsTi2LxDipJT3UkPy6K6FpBjPoq
+    paid_storage_size_diff: '657'
+    consumed_gas: '21715'
+  StringCaller1024:
+    config: "$base-config"
+    duration: 81.269307
+    address: KT1V7AD2EqRBdDskrWp4YuEYQsfYTc2TFsxD
+    paid_storage_size_diff: '1169'
+    consumed_gas: '29907'
+  StringCaller2048:
+    config: "$base-config"
+    duration: 37.188118
+    address: KT1N5RzBsnF8SeDUDZ5igUuFMUXazFbUKzmy
+    paid_storage_size_diff: '2193'
+    consumed_gas: '46291'
+  StringCaller4096:
+    config: "$base-config"
+    duration: 48.882183
+    address: KT1MiAhSNfP2vxcHsv8TUoYC4vb2wjEqcHjP
+    paid_storage_size_diff: '4241'
+    consumed_gas: '79059'
+  StringCaller8192:
+    config: "$base-config"
+    duration: 75.376267
+    address: KT1XkXGutLxpbxScQnFuBRv2ZgiPRsXPqyyk
+    paid_storage_size_diff: '8337'
+    consumed_gas: '144595'
+ran:
+  CallNatCaller1:
+    contract: NatCaller1
+    parameters: 
+    config: "$base-config"
+    duration: 35.83858
+    receipt: !ruby/object:Enumerator {}
+    operation_hash: onfetmTdDGeWuGaXW42qRowfywYfnReDDECnXCLTbPGBvyu9Ufn
+    consumed_gas: '11324'
+  CallNatCaller2:
+    contract: NatCaller2
+    parameters: 
+    config: "$base-config"
+    duration: 88.115647
+    receipt: !ruby/object:Enumerator {}
+    operation_hash: ooHDVxqDCQgTgdEsHRCTpmJSeJyBY9JHd1D9Ed13qsseHreR42n
+    consumed_gas: '11324'
+  CallNatCaller4:
+    contract: NatCaller4
+    parameters: 
+    config: "$base-config"
+    duration: 38.376674
+    receipt: !ruby/object:Enumerator {}
+    operation_hash: oo1TxnL4Gjv5zUPRBsoroW52yiRzTkNjc5tdoSn3ujAk2T4eARC
+    consumed_gas: '11324'
+  CallNatCaller8:
+    contract: NatCaller8
+    parameters: 
+    config: "$base-config"
+    duration: 35.721029
+    receipt: !ruby/object:Enumerator {}
+    operation_hash: opJuzMySDPQhSEQe3Gv9fRpU7vHXqQcjhWj4RVa3k2pfE4c4X7s
+    consumed_gas: '11324'
+  CallNatCaller16:
+    contract: NatCaller16
+    parameters: 
+    config: "$base-config"
+    duration: 205.059262
+    receipt: !ruby/object:Enumerator {}
+    operation_hash: opAPo5voNEaNi2uAkfErgvn53LohYU69mzTUs36zGA52htRqFGA
+    consumed_gas: '11324'
+  CallNatCaller32:
+    contract: NatCaller32
+    parameters: 
+    config: "$base-config"
+    duration: 61.818076
+    receipt: !ruby/object:Enumerator {}
+    operation_hash: ooBuLA94VWGZxcFhwBMQiPZZFdxsh5TGq4pLZwhdueofADqs4z4
+    consumed_gas: '11324'
+  CallNatCaller64:
+    contract: NatCaller64
+    parameters: 
+    config: "$base-config"
+    duration: 23.338673
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BLBNZQVXe6bPrvK4pkqnSGzcGebp8YKJ5ka23uLHSStHwaTPe1k
+      (pass: 3, offset: 1)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.003855\n"
+    - "  Expected counter: 92805\n"
+    - "  Gas limit: 36038\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.003855\n"
+    - "    fees(tz3WXYtyDUNL91qfiCJtVUX746QpNv5i5ve5,107) ... +ꜩ0.003855\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1SiHRxuMyPjtsyuNeJYwQ2KBXcWgG1WrSW\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage: (Pair 64 0x01dd05c7d68fdb7cf3fa2adaea2c9d97b00277f53100)\n"
+    - "    Storage size: 143 bytes\n"
+    - "    Consumed gas: 24614\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1SiHRxuMyPjtsyuNeJYwQ2KBXcWgG1WrSW\n"
+    - "      To: KT1UjRpobstWJDErU7oH2Ho4AutQXw3CZehv\n"
+    - "      Parameter: 64\n"
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11324\n"
+    - "\n"
+    operation_hash: ooLLGs9iRsUNXE6wAchxj3YUYJtDq55g6V7pTnTbBPf9cHpMzos
+    consumed_gas: '11324'
+  CallNatCaller128:
+    contract: NatCaller128
+    parameters: 
+    config: "$base-config"
+    duration: 23.521202
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BMafxq7b8t53QcTSxbXLpouXVoWMdnuEqWzYdMqxomyqChVVSV3
+      (pass: 3, offset: 0)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.003855\n"
+    - "  Expected counter: 92808\n"
+    - "  Gas limit: 36038\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.003855\n"
+    - "    fees(tz1eY5Aqa1kXDFoiebL28emyXFoneAoVg1zh,107) ... +ꜩ0.003855\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1QCH3k5S7XqCjxpnD3hNs6M4mjFqntJNrK\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - "      (Pair 128 0x01dd05c7d68fdb7cf3fa2adaea2c9d97b00277f53100)\n"
+    - "    Storage size: 143 bytes\n"
+    - "    Consumed gas: 24614\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1QCH3k5S7XqCjxpnD3hNs6M4mjFqntJNrK\n"
+    - "      To: KT1UjRpobstWJDErU7oH2Ho4AutQXw3CZehv\n"
+    - "      Parameter: 128\n"
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11324\n"
+    - "\n"
+    operation_hash: oozSTE9dACgtzsab4WLE9VNR6vBc3rmq5VjHSMw9HNPmY3er1od
+    consumed_gas: '11324'
+  CallNatCaller256:
+    contract: NatCaller256
+    parameters: 
+    config: "$base-config"
+    duration: 155.164814
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BMeHUWV4LeNUX4UKT6N3AhQmNUX9Mz6G1hxVkw1obusnXVadVEf
+      (pass: 3, offset: 0)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.003855\n"
+    - "  Expected counter: 92813\n"
+    - "  Gas limit: 36038\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.003855\n"
+    - "    fees(tz1YH2LE6p7Sj16vF6irfHX92QV45XAZYHnX,107) ... +ꜩ0.003855\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1PoKsh5UNxh5cg2h5QFmPY4ZAD6E584xy8\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - "      (Pair 256 0x01dd05c7d68fdb7cf3fa2adaea2c9d97b00277f53100)\n"
+    - "    Storage size: 143 bytes\n"
+    - "    Consumed gas: 24614\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1PoKsh5UNxh5cg2h5QFmPY4ZAD6E584xy8\n"
+    - "      To: KT1UjRpobstWJDErU7oH2Ho4AutQXw3CZehv\n"
+    - "      Parameter: 256\n"
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11324\n"
+    - "\n"
+    operation_hash: ooEUoRpF72Rr1gJmT6cFoh2uaGHPtBuMKn9CakFyqAMcQfhTQNi
+    consumed_gas: '11324'
+  CallNatCaller512:
+    contract: NatCaller512
+    parameters: 
+    config: "$base-config"
+    duration: 121.530467
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BLaqn5MmjT8oQ7hnUfteBTt77969Vs5YvkTeEpKFtndKH8Lky6x
+      (pass: 3, offset: 0)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.003855\n"
+    - "  Expected counter: 92819\n"
+    - "  Gas limit: 36038\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.003855\n"
+    - "    fees(tz1eY5Aqa1kXDFoiebL28emyXFoneAoVg1zh,107) ... +ꜩ0.003855\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1K4XEeXkjU69zeGeUCESgyftj6M2TNxveB\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - "      (Pair 512 0x01dd05c7d68fdb7cf3fa2adaea2c9d97b00277f53100)\n"
+    - "    Storage size: 143 bytes\n"
+    - "    Consumed gas: 24614\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1K4XEeXkjU69zeGeUCESgyftj6M2TNxveB\n"
+    - "      To: KT1UjRpobstWJDErU7oH2Ho4AutQXw3CZehv\n"
+    - "      Parameter: 512\n"
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11324\n"
+    - "\n"
+    operation_hash: ooAsY67P3gVndYh94owCjwt8KQLe1bDviMmzSnASxyDxRRWusp7
+    consumed_gas: '11324'
+  CallNatCaller1024:
+    contract: NatCaller1024
+    parameters: 
+    config: "$base-config"
+    duration: 23.212654
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BMPD2EgMw3wn6nVYd7norvcRCZyRonN9NXtU8vspqSQRNeBbGeP
+      (pass: 3, offset: 0)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.003855\n"
+    - "  Expected counter: 92824\n"
+    - "  Gas limit: 36038\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.003855\n"
+    - "    fees(tz1aWXP237BLwNHJcCD4b3DutCevhqq2T1Z9,107) ... +ꜩ0.003855\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1MvYMr52Rm3pxrKYPHhQyLZEKyoGm3SP61\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - "      (Pair 1024 0x01dd05c7d68fdb7cf3fa2adaea2c9d97b00277f53100)\n"
+    - "    Storage size: 143 bytes\n"
+    - "    Consumed gas: 24614\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1MvYMr52Rm3pxrKYPHhQyLZEKyoGm3SP61\n"
+    - "      To: KT1UjRpobstWJDErU7oH2Ho4AutQXw3CZehv\n"
+    - "      Parameter: 1024\n"
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11324\n"
+    - "\n"
+    operation_hash: ookhVppQwxS8rRBAY8RAB515ENC5pg4XrJAykGNCtPMxryvEEeT
+    consumed_gas: '11324'
+  CallNatCaller2048:
+    contract: NatCaller2048
+    parameters: 
+    config: "$base-config"
+    duration: 70.559323
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BL3UkyzgREfxnBviuEmD8eRA4BY1bqHUrzgKB7fykbZUhYLNwGE
+      (pass: 3, offset: 0)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.003855\n"
+    - "  Expected counter: 92828\n"
+    - "  Gas limit: 36038\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.003855\n"
+    - "    fees(tz1NRTQeqcuwybgrZfJavBY3of83u8uLpFBj,107) ... +ꜩ0.003855\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1AhYJa1qaxPeUm7YrP5AvnuFXVaqUN2ERa\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - "      (Pair 2048 0x01dd05c7d68fdb7cf3fa2adaea2c9d97b00277f53100)\n"
+    - "    Storage size: 143 bytes\n"
+    - "    Consumed gas: 24614\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1AhYJa1qaxPeUm7YrP5AvnuFXVaqUN2ERa\n"
+    - "      To: KT1UjRpobstWJDErU7oH2Ho4AutQXw3CZehv\n"
+    - "      Parameter: 2048\n"
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11324\n"
+    - "\n"
+    operation_hash: onzoEStxZ6kyoNQ1NXdZY6RQrXce8dYRF5rg391N97sbgG7RZdf
+    consumed_gas: '11324'
+  CallNatCaller4096:
+    contract: NatCaller4096
+    parameters: 
+    config: "$base-config"
+    duration: 37.071626
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BKimMD6yDyQCUtw8R1vEknThn3tNihj5cnWbE8Ge6Fdc8Mr3sWv
+      (pass: 3, offset: 0)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.003855\n"
+    - "  Expected counter: 92831\n"
+    - "  Gas limit: 36038\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.003855\n"
+    - "    fees(tz1YH2LE6p7Sj16vF6irfHX92QV45XAZYHnX,107) ... +ꜩ0.003855\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1BExafcAHq2GS3KuLwUqujJd8gZzscaMTx\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - "      (Pair 4096 0x01dd05c7d68fdb7cf3fa2adaea2c9d97b00277f53100)\n"
+    - "    Storage size: 143 bytes\n"
+    - "    Consumed gas: 24614\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1BExafcAHq2GS3KuLwUqujJd8gZzscaMTx\n"
+    - "      To: KT1UjRpobstWJDErU7oH2Ho4AutQXw3CZehv\n"
+    - "      Parameter: 4096\n"
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11324\n"
+    - "\n"
+    operation_hash: op3AMTecGPDnJmne4zhcXwxK3t9FMVVHRNipf3Wy2iXuKw4Fth9
+    consumed_gas: '11324'
+  CallNatCaller8192:
+    contract: NatCaller8192
+    parameters: 
+    config: "$base-config"
+    duration: 43.526424
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BLjJaXTgZJ6mHCXzQKwXH5nRojiAFRG8KEXGXx2hcNNNkYZXWuo
+      (pass: 3, offset: 0)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.003858\n"
+    - "  Expected counter: 92844\n"
+    - "  Gas limit: 36065\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.003858\n"
+    - "    fees(tz1YH2LE6p7Sj16vF6irfHX92QV45XAZYHnX,107) ... +ꜩ0.003858\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1FFEkstZhiPXQiJ5gJUNZ998eEHpecdRm7\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - "      (Pair 8192 0x01dd05c7d68fdb7cf3fa2adaea2c9d97b00277f53100)\n"
+    - "    Storage size: 144 bytes\n"
+    - "    Consumed gas: 24641\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1FFEkstZhiPXQiJ5gJUNZ998eEHpecdRm7\n"
+    - "      To: KT1UjRpobstWJDErU7oH2Ho4AutQXw3CZehv\n"
+    - "      Parameter: 8192\n"
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11324\n"
+    - "\n"
+    operation_hash: ooaJdLH89cuJf71C3XM92nCaDnkveBY6vnb4dk5H8gm3CFCfZAK
+    consumed_gas: '11324'
+  CallNatCaller16384:
+    contract: NatCaller16384
+    parameters: 
+    config: "$base-config"
+    duration: 98.283032
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BLvaaW3dLfJ1GNGeZS6YtcfeTaftvXKQ6K1RtXa2zTYA4uy2Lvz
+      (pass: 3, offset: 1)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.003858\n"
+    - "  Expected counter: 92847\n"
+    - "  Gas limit: 36065\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.003858\n"
+    - "    fees(tz1T8UYSbVuRm6CdhjvwCfXsKXb4yL9ai9Q3,107) ... +ꜩ0.003858\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1J3NAzrwWbxh869x58Lwi2zPdhftn9jHFE\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - "      (Pair 16384 0x01dd05c7d68fdb7cf3fa2adaea2c9d97b00277f53100)\n"
+    - "    Storage size: 144 bytes\n"
+    - "    Consumed gas: 24641\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1J3NAzrwWbxh869x58Lwi2zPdhftn9jHFE\n"
+    - "      To: KT1UjRpobstWJDErU7oH2Ho4AutQXw3CZehv\n"
+    - "      Parameter: 16384\n"
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11324\n"
+    - "\n"
+    operation_hash: ooE7qeM3fTuuZ3uR4xuJ6ex2NYT9WLGevYhmC4P7WLZ2wveKkYk
+    consumed_gas: '11324'
+  CallStringCaller1:
+    contract: StringCaller1
+    parameters: 
+    config: "$base-config"
+    duration: 36.016071
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BLoBtKQfrYS9Sz7GyxBv44YQWLycjaCsDds5d5s9BFcWrL1PaK8
+      (pass: 3, offset: 1)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.003863\n"
+    - "  Expected counter: 92859\n"
+    - "  Gas limit: 36115\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.003863\n"
+    - "    fees(tz1YH2LE6p7Sj16vF6irfHX92QV45XAZYHnX,107) ... +ꜩ0.003863\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1RpbuVfPhkVxjhuEygwR3YkL91e1z8dXcD\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - '      (Pair "1" 0x0124460852297907dde0015507682e462cb717958000)
+
+'
+    - "    Storage size: 146 bytes\n"
+    - "    Consumed gas: 24691\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1RpbuVfPhkVxjhuEygwR3YkL91e1z8dXcD\n"
+    - "      To: KT1BtZncczLzrPD9dF3k8o4rDoRsK7QWWjHo\n"
+    - '      Parameter: "1"
+
+'
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11324\n"
+    - "\n"
+    operation_hash: opSGScYikDawz7d1cgR1r61jUDJxp5x5K9DdAv2sRbYiVVSW9Bo
+    consumed_gas: '11324'
+  CallStringCaller2:
+    contract: StringCaller2
+    parameters: 
+    config: "$base-config"
+    duration: 61.114524
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BLY5AogKjJdN45MPNhFwNeA4aphURct6cbvjPQqTGrGo6froLvK
+      (pass: 3, offset: 2)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.003865\n"
+    - "  Expected counter: 92868\n"
+    - "  Gas limit: 36140\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.003865\n"
+    - "    fees(tz1YH2LE6p7Sj16vF6irfHX92QV45XAZYHnX,107) ... +ꜩ0.003865\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1KfBWbUMWW9ppuBnadxXKwuckGSgp4Pzw8\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - '      (Pair "11" 0x0124460852297907dde0015507682e462cb717958000)
+
+'
+    - "    Storage size: 147 bytes\n"
+    - "    Consumed gas: 24716\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1KfBWbUMWW9ppuBnadxXKwuckGSgp4Pzw8\n"
+    - "      To: KT1BtZncczLzrPD9dF3k8o4rDoRsK7QWWjHo\n"
+    - '      Parameter: "11"
+
+'
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11324\n"
+    - "\n"
+    operation_hash: opPTVCNMDDzEDeL8ccczMfd5uAwmeyqJsiGYDQAhu25F9pe1g42
+    consumed_gas: '11324'
+  CallStringCaller4:
+    contract: StringCaller4
+    parameters: 
+    config: "$base-config"
+    duration: 95.140138
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BM5nVbEHcFmZ1rHgY8SGgRmMgkDVXu5FZDczBFncxXvRMG4ynfY
+      (pass: 3, offset: 1)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.00387\n"
+    - "  Expected counter: 92883\n"
+    - "  Gas limit: 36190\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.00387\n"
+    - "    fees(tz1a6SkBrxCywRHHsUKN3uQse7huiBNSGb5p,107) ... +ꜩ0.00387\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1BtMw7nFZgtLwPTBS85okPK5eNwdGgtsq2\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - '      (Pair "1111" 0x0124460852297907dde0015507682e462cb717958000)
+
+'
+    - "    Storage size: 149 bytes\n"
+    - "    Consumed gas: 24766\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1BtMw7nFZgtLwPTBS85okPK5eNwdGgtsq2\n"
+    - "      To: KT1BtZncczLzrPD9dF3k8o4rDoRsK7QWWjHo\n"
+    - '      Parameter: "1111"
+
+'
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11324\n"
+    - "\n"
+    operation_hash: ooJc3VkqefHChpJBQGU93pYpn4gEUH3UnX1pCzuUddWz5tdQuJq
+    consumed_gas: '11324'
+  CallStringCaller8:
+    contract: StringCaller8
+    parameters: 
+    config: "$base-config"
+    duration: 36.875231
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BLKntksz61M3Pz6Bv1VS6AjPNfEWnmuN7hEqZPByUbPNmFJDJPE
+      (pass: 3, offset: 1)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.003881\n"
+    - "  Expected counter: 92892\n"
+    - "  Gas limit: 36292\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.003881\n"
+    - "    fees(tz3WXYtyDUNL91qfiCJtVUX746QpNv5i5ve5,107) ... +ꜩ0.003881\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1PPe4Vrybh4P26voDWoDbLCNSvMzSAkBK5\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - '      (Pair "11111111" 0x0124460852297907dde0015507682e462cb717958000)
+
+'
+    - "    Storage size: 153 bytes\n"
+    - "    Consumed gas: 24868\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1PPe4Vrybh4P26voDWoDbLCNSvMzSAkBK5\n"
+    - "      To: KT1BtZncczLzrPD9dF3k8o4rDoRsK7QWWjHo\n"
+    - '      Parameter: "11111111"
+
+'
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11324\n"
+    - "\n"
+    operation_hash: oopSC3okE7a12M8q72xA5UtJQePxFcnswk382Xn2A57UbS8qKWJ
+    consumed_gas: '11324'
+  CallStringCaller16:
+    contract: StringCaller16
+    parameters: 
+    config: "$base-config"
+    duration: 51.098153
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BMeyeAvwnGyA9QrHKDDdbQzvK8yxQMtc6p92aM2h29YzEaZjnLi
+      (pass: 3, offset: 0)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.003902\n"
+    - "  Expected counter: 92898\n"
+    - "  Gas limit: 36506\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.003902\n"
+    - "    fees(tz1PirboZKFVqkfE45hVLpkpXaZtLk3mqC17,107) ... +ꜩ0.003902\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1VCKiiS2D59qHYC8MK8WLqXSkGoMs1jyfV\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - '      (Pair "1111111111111111" 0x0124460852297907dde0015507682e462cb717958000)
+
+'
+    - "    Storage size: 161 bytes\n"
+    - "    Consumed gas: 25078\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1VCKiiS2D59qHYC8MK8WLqXSkGoMs1jyfV\n"
+    - "      To: KT1BtZncczLzrPD9dF3k8o4rDoRsK7QWWjHo\n"
+    - '      Parameter: "1111111111111111"
+
+'
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11328\n"
+    - "\n"
+    operation_hash: oo3c4knv4ph3E5shSqMqq7MEhasnh9dviVc9R5yN88j3T3oDiXz
+    consumed_gas: '11328'
+  CallStringCaller32:
+    contract: StringCaller32
+    parameters: 
+    config: "$base-config"
+    duration: 70.791843
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BKpbAQq1mYwph7Wq4MgrLAxQVX7CAg5WBiygggtxLYh2765C1mj
+      (pass: 3, offset: 0)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.003945\n"
+    - "  Expected counter: 92903\n"
+    - "  Gas limit: 36934\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.003945\n"
+    - "    fees(tz1NRTQeqcuwybgrZfJavBY3of83u8uLpFBj,107) ... +ꜩ0.003945\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1LBsoV6Caf9mTxU82zd4GjYS8AkMyx89kG\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - '      (Pair "11111111111111111111111111111111"
+
+'
+    - "            0x0124460852297907dde0015507682e462cb717958000)\n"
+    - "    Storage size: 177 bytes\n"
+    - "    Consumed gas: 25498\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1LBsoV6Caf9mTxU82zd4GjYS8AkMyx89kG\n"
+    - "      To: KT1BtZncczLzrPD9dF3k8o4rDoRsK7QWWjHo\n"
+    - '      Parameter: "11111111111111111111111111111111"
+
+'
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11336\n"
+    - "\n"
+    operation_hash: ooKZShUigvNYczXc66XaLyFpfqiWrkwdvPTZXcs45TF3RPwWwNN
+    consumed_gas: '11336'
+  CallStringCaller64:
+    contract: StringCaller64
+    parameters: 
+    config: "$base-config"
+    duration: 121.603136
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BMGs8C3PC1E28bJv6wrSSpvP5hkcyCdPKqgj8NkpZiKp15HLKwA
+      (pass: 3, offset: 0)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.00403\n"
+    - "  Expected counter: 92915\n"
+    - "  Gas limit: 37790\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.00403\n"
+    - "    fees(tz1eY5Aqa1kXDFoiebL28emyXFoneAoVg1zh,107) ... +ꜩ0.00403\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1Fxb9YYX3yGNTHwfvwahqYnivFjGQZ9Z1p\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - '      (Pair "1111111111111111111111111111111111111111111111111111111111111111"
+
+'
+    - "            0x0124460852297907dde0015507682e462cb717958000)\n"
+    - "    Storage size: 209 bytes\n"
+    - "    Consumed gas: 26338\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1Fxb9YYX3yGNTHwfvwahqYnivFjGQZ9Z1p\n"
+    - "      To: KT1BtZncczLzrPD9dF3k8o4rDoRsK7QWWjHo\n"
+    - '      Parameter: "1111111111111111111111111111111111111111111111111111111111111111"
+
+'
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11352\n"
+    - "\n"
+    operation_hash: ooidFu2SKSxX6Du77wwJtAQWTGurHdVzeJJvQWsFsKAZtf8m4W5
+    consumed_gas: '11352'
+  CallStringCaller128:
+    contract: StringCaller128
+    parameters: 
+    config: "$base-config"
+    duration: 182.707022
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BMbp6b6hn7EBoisBQB4kDrp8RkZRdZv1uNwfVog148ZAAF9ntnz
+      (pass: 3, offset: 0)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.004202\n"
+    - "  Expected counter: 92924\n"
+    - "  Gas limit: 39502\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.004202\n"
+    - "    fees(tz1aWXP237BLwNHJcCD4b3DutCevhqq2T1Z9,107) ... +ꜩ0.004202\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT19kvkXtquq7aj2sAMQXGwJHBuBrnwzMPrg\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - '      (Pair "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+
+'
+    - "            0x0124460852297907dde0015507682e462cb717958000)\n"
+    - "    Storage size: 273 bytes\n"
+    - "    Consumed gas: 28018\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT19kvkXtquq7aj2sAMQXGwJHBuBrnwzMPrg\n"
+    - "      To: KT1BtZncczLzrPD9dF3k8o4rDoRsK7QWWjHo\n"
+    - '      Parameter: "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+
+'
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11384\n"
+    - "\n"
+    operation_hash: opTriKuL9jGSUhKPWYp3UNVoTqekgxGntckXdRarFRXvDpyL4xB
+    consumed_gas: '11384'
+  CallStringCaller256:
+    contract: StringCaller256
+    parameters: 
+    config: "$base-config"
+    duration: 48.598969
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BLtgRQL4QUsxmdkrd5GGB7GgpScUTSbXLjhUhwkPELSUE8kzHK6
+      (pass: 3, offset: 1)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.004544\n"
+    - "  Expected counter: 92927\n"
+    - "  Gas limit: 42926\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.004544\n"
+    - "    fees(tz3WXYtyDUNL91qfiCJtVUX746QpNv5i5ve5,107) ... +ꜩ0.004544\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1TcD4fj5tvuULVFwre5pav8pDgxsn82hvU\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - '      (Pair "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+
+'
+    - "            0x0124460852297907dde0015507682e462cb717958000)\n"
+    - "    Storage size: 401 bytes\n"
+    - "    Consumed gas: 31378\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1TcD4fj5tvuULVFwre5pav8pDgxsn82hvU\n"
+    - "      To: KT1BtZncczLzrPD9dF3k8o4rDoRsK7QWWjHo\n"
+    - '      Parameter: "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+
+'
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11448\n"
+    - "\n"
+    operation_hash: onocN7N559cx4Q9Ro6M7qLKd1qrrxekgiVtfQoDWN6LeGf5ntkn
+    consumed_gas: '11448'
+  CallStringCaller512:
+    contract: StringCaller512
+    parameters: 
+    config: "$base-config"
+    duration: 36.116344
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BMLvGi6ZVX5ecaFfssyxCxKnKbw418UQpRnqv868JfnaVL7b641
+      (pass: 3, offset: 0)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.005229\n"
+    - "  Expected counter: 92934\n"
+    - "  Gas limit: 49774\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.005229\n"
+    - "    fees(tz3gN8NTLNLJg5KRsUU47NHNVHbdhcFXjjaB,107) ... +ꜩ0.005229\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1Jn9S33TsTi2LxDipJT3UkPy6K6FpBjPoq\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - '      (Pair "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+
+'
+    - "            0x0124460852297907dde0015507682e462cb717958000)\n"
+    - "    Storage size: 657 bytes\n"
+    - "    Consumed gas: 38098\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1Jn9S33TsTi2LxDipJT3UkPy6K6FpBjPoq\n"
+    - "      To: KT1BtZncczLzrPD9dF3k8o4rDoRsK7QWWjHo\n"
+    - '      Parameter: "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+
+'
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11576\n"
+    - "\n"
+    operation_hash: opaFLbdTyiXHeiRJJDwKDzYH9hL1bXZQUgiCc5Ri1CSyiw4TnjN
+    consumed_gas: '11576'
+  CallStringCaller1024:
+    contract: StringCaller1024
+    parameters: 
+    config: "$base-config"
+    duration: 84.630475
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BKwV4BL6zyeAgH68ZVtnp1W6tQgKRdfBu5AFdC6frdtCWNuq52u
+      (pass: 3, offset: 2)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.006598\n"
+    - "  Expected counter: 92941\n"
+    - "  Gas limit: 63470\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.006598\n"
+    - "    fees(tz1aWXP237BLwNHJcCD4b3DutCevhqq2T1Z9,107) ... +ꜩ0.006598\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1V7AD2EqRBdDskrWp4YuEYQsfYTc2TFsxD\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - '      (Pair "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+
+'
+    - "            0x0124460852297907dde0015507682e462cb717958000)\n"
+    - "    Storage size: 1169 bytes\n"
+    - "    Consumed gas: 51538\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1V7AD2EqRBdDskrWp4YuEYQsfYTc2TFsxD\n"
+    - "      To: KT1BtZncczLzrPD9dF3k8o4rDoRsK7QWWjHo\n"
+    - '      Parameter: "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+
+'
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 11832\n"
+    - "\n"
+    operation_hash: oobdkffGg2irFgZzsBoXZ94YCN6VAnBmDvUCKEiRhZY69PpVxYQ
+    consumed_gas: '11832'
+  CallStringCaller2048:
+    contract: StringCaller2048
+    parameters: 
+    config: "$base-config"
+    duration: 95.02133
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BLa9ZL11nc4Xc8Wiirxft76mrFyySWgXqEsewdBFMUr7u7WMbrC
+      (pass: 3, offset: 0)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.009338\n"
+    - "  Expected counter: 92947\n"
+    - "  Gas limit: 90862\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.009338\n"
+    - "    fees(tz1eY5Aqa1kXDFoiebL28emyXFoneAoVg1zh,107) ... +ꜩ0.009338\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1N5RzBsnF8SeDUDZ5igUuFMUXazFbUKzmy\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - '      (Pair "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+
+'
+    - "            0x0124460852297907dde0015507682e462cb717958000)\n"
+    - "    Storage size: 2193 bytes\n"
+    - "    Consumed gas: 78418\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1N5RzBsnF8SeDUDZ5igUuFMUXazFbUKzmy\n"
+    - "      To: KT1BtZncczLzrPD9dF3k8o4rDoRsK7QWWjHo\n"
+    - '      Parameter: "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+
+'
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 12344\n"
+    - "\n"
+    operation_hash: op5XTeghnPxQk5UvjH1irk4nW95xNHFLhtUK8HrcBzS4K396ky3
+    consumed_gas: '12344'
+  CallStringCaller4096:
+    contract: StringCaller4096
+    parameters: 
+    config: "$base-config"
+    duration: 42.945652
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BLFV2pjDiAjfdCxRQaNK7GTUPDwBNERuv8b4Phxh7d2cpyNzsJb
+      (pass: 3, offset: 0)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.014816\n"
+    - "  Expected counter: 92959\n"
+    - "  Gas limit: 145646\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.014816\n"
+    - "    fees(tz1YH2LE6p7Sj16vF6irfHX92QV45XAZYHnX,107) ... +ꜩ0.014816\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1MiAhSNfP2vxcHsv8TUoYC4vb2wjEqcHjP\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - '      (Pair "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+
+'
+    - "            0x0124460852297907dde0015507682e462cb717958000)\n"
+    - "    Storage size: 4241 bytes\n"
+    - "    Consumed gas: 132178\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1MiAhSNfP2vxcHsv8TUoYC4vb2wjEqcHjP\n"
+    - "      To: KT1BtZncczLzrPD9dF3k8o4rDoRsK7QWWjHo\n"
+    - '      Parameter: "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+
+'
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 13368\n"
+    - "\n"
+    operation_hash: ooCq31KXrj45Ceo3RCJHDi7QZi9CTkajN9aHy3PCyZyKtUJwL7h
+    consumed_gas: '13368'
+  CallStringCaller8192:
+    contract: StringCaller8192
+    parameters: 
+    config: "$base-config"
+    duration: 49.389627
+    receipt:
+    - 'Warning:
+
+'
+    - "  \n"
+    - "                 This is NOT the Tezos Mainnet.\n"
+    - "  \n"
+    - "     The node you are connecting to claims to be running on the\n"
+    - "               Tezos Alphanet DEVELOPMENT NETWORK.\n"
+    - "          Do NOT use your fundraiser keys on this network.\n"
+    - "          Alphanet is a testing network, with free tokens.\n"
+    - "\n"
+    - 'Operation found in block: BLnAwK8aGXc1s478bVhmKP8N6KH9MUF73TyCozKtENNs9N4pway
+      (pass: 3, offset: 2)
+
+'
+    - 'Manager signed operations:
+
+'
+    - "  From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "  Fee to the baker: ꜩ0.025774\n"
+    - "  Expected counter: 92982\n"
+    - "  Gas limit: 255214\n"
+    - "  Storage limit: 0 bytes\n"
+    - "  Balance updates:\n"
+    - "    tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr ............. -ꜩ0.025774\n"
+    - "    fees(tz1a6SkBrxCywRHHsUKN3uQse7huiBNSGb5p,107) ... +ꜩ0.025774\n"
+    - "  Transaction:\n"
+    - "    Amount: ꜩ0\n"
+    - "    From: tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr\n"
+    - "    To: KT1XkXGutLxpbxScQnFuBRv2ZgiPRsXPqyyk\n"
+    - "    This transaction was successfully applied\n"
+    - "    Updated storage:\n"
+    - '      (Pair "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+
+'
+    - "            0x0124460852297907dde0015507682e462cb717958000)\n"
+    - "    Storage size: 8337 bytes\n"
+    - "    Consumed gas: 239698\n"
+    - "  Internal operations:\n"
+    - "    Transaction:\n"
+    - "      Amount: ꜩ0\n"
+    - "      From: KT1XkXGutLxpbxScQnFuBRv2ZgiPRsXPqyyk\n"
+    - "      To: KT1BtZncczLzrPD9dF3k8o4rDoRsK7QWWjHo\n"
+    - '      Parameter: "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+
+'
+    - "      This transaction was successfully applied\n"
+    - "      Updated storage: Unit\n"
+    - "      Storage size: 38 bytes\n"
+    - "      Consumed gas: 15416\n"
+    - "\n"
+    operation_hash: onhBXb56otfSgJaYHtUBJBisEok8g2o3ocdtt5V4m2dzT1qydKi
+    consumed_gas: '15416'

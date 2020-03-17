@@ -1,5 +1,6 @@
 require "tezos/client"
 require "lorentz/contract/kernel"
+require "tezos/client/utils"
 require "yaml"
 
 module Lorentz
@@ -35,8 +36,8 @@ module Lorentz
 
       def initialize(config, command, storage_command, storage_params, burn_cap)
         @config = config
-        @command = command
-        @storage_command = storage_command
+        @command = File.expand_path(command)
+        @storage_command = File.expand_path(storage_command)
         @storage_params = storage_params
         @burn_cap = burn_cap
       end
@@ -85,7 +86,7 @@ module Lorentz
       def self.find_ran_call(contract_call_alias, ran_call)
         if self.ran_calls.has_key?(contract_call_alias) &&
            !self.ran_calls[contract_call_alias].nil? &&
-           (!self.ran_calls[contract_call_alias]&.[]('operation_hash').nil? || !self.ran_calls[contract_call_alias]&.[]('error').nil?)
+           (!self.ran_calls[contract_call_alias]&.[]('operation_hash').nil? || !self.ran_calls[contract_call_alias]&.[]('error_message').nil?)
           puts "#{contract_call_alias} already ran: #{self.ran_calls[contract_call_alias]}"
           puts
           existing_ran_call = self.ran_calls[contract_call_alias]
@@ -113,7 +114,7 @@ module Lorentz
         if file_path.nil? || File.extname(file_path).downcase != '.yaml'
           raise "No path to a *.yaml file provided"
         end
-        yaml = YAML.safe_load(File.read(file_path), [], [], true, file_path)
+        yaml = YAML.safe_load(File.read(file_path), [Enumerator], [], true, file_path)
         if yaml.has_key?('<<')
           Dir.chdir("#{File.dirname(file_path)}") do
             included = YAML.safe_load(File.read(yaml['<<']), [], [], true, yaml['<<'])
@@ -183,16 +184,15 @@ module Lorentz
                           origination['storage_command'],
                           origination['initial_storage'],
                           origination['burn_cap'])
-              result_address =
+              origination_result_hash =
                 lorentz_contract.originate(tezos_client,
                                            contract_alias,
                                            self.all_names)
-              origination['address'] = result_address
-              self.originated_contracts[contract_alias] = {
-                'address' => result_address,
-                'config' => origination_config,
-                'duration' => Time.now - begin_time
+              originated_contract_hash = { 'config' => origination_config,
+                                           'duration' => Time.now - begin_time
               }
+              originated_contract_hash.merge! origination_result_hash.stringify_keys
+              self.originated_contracts[contract_alias] = originated_contract_hash
 
               # Commit ASAP to prevent the need to re-originate if some part fails
               self.save_originated_contracts file_path, yaml_configs
@@ -230,11 +230,7 @@ module Lorentz
                 'config' => contract_call_config,
                 'duration' => Time.now - begin_time 
               }
-              if contract_call_result.has_key?('operation_hash')
-                ran_call_hash['operation_hash'] = contract_call_result['operation_hash']
-              else
-                ran_call_hash['error'] = contract_call_result[:error_message]
-              end
+              ran_call_hash.merge! contract_call_result.stringify_keys
               self.ran_calls[contract_call_alias] = ran_call_hash
 
               # Commit ASAP to prevent the need to re-run if some part fails
@@ -250,12 +246,12 @@ module Lorentz
         Dir.chdir(self.path, &block)
       end
 
-      def originate_cmd(tezos_client, contract_name, names)
-        tezos_client.originate_cmd(contract_name,
-                                   self.print(),
-                                   self.storage(names),
-                                   @burn_cap)
-      end
+#       def originate_cmd(tezos_client, contract_name, names)
+#         tezos_client.originate_cmd(contract_name,
+#                                    self.print(),
+#                                    self.storage(names),
+#                                    @burn_cap)
+#       end
 
       def originate(tezos_client, contract_name, names)
         tezos_client.originate(contract_name,
@@ -300,14 +296,14 @@ module Lorentz
       def initialize(config, contract_address, command, parameters, burn_cap, expect_failure=false)
         @config = config
         @contract_address = contract_address
-        @storage_command = command
+        @storage_command = File.expand_path(command)
         @storage_params = parameters
         @burn_cap = burn_cap
         @expect_failure = expect_failure.to_s.match(/t(rue)?/i)
       end
 
       def contract_address
-        if /^\$/ === @contract_address # === /^\$/
+        if /^\$/ === @contract_address
           found_address = LorentzContractParam.all_names[@contract_address[1..-1]]
           if !found_address.nil?
             @contract_address = found_address
@@ -323,18 +319,12 @@ module Lorentz
         Param.instance_method(:storage).bind(self).call(Param.all_names)
       end
 
-      def contract_call_cmd(tezos_client, contract_call_alias)
-        tezos_client.contract_call_cmd(self.contract_address,
-                                       self.michelson_parameters,
-                                       self.burn_cap)
-      end
-
       def contract_call(tezos_client, contract_call_alias)
         begin
           tezos_client.contract_call(self.contract_address,
                                      self.michelson_parameters,
                                      self.burn_cap)
-        rescue Lorentz::Contract::Kernel::SystemError => e
+        rescue Lorentz::Contract::Kernel::ContractError => e
           if self.expect_failure
             return { 'error_message': e.message_list.map(&:chomp) }
           else

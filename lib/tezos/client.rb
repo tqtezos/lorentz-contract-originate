@@ -1,5 +1,6 @@
 require "lorentz/contract/enumerable"
 require "lorentz/contract/kernel"
+require "tezos/client/utils"
 
 module Tezos
   class Client
@@ -21,7 +22,7 @@ module Tezos
               result_lines
             end
           end
-        rescue SystemError
+        rescue ContractError
         end
       end
       result
@@ -39,7 +40,7 @@ module Tezos
     end
 
     def originate(contract_name, contract_code, initial_storage, burn_cap)
-      if operation_hash = self.system_operation_hash(self.originate_cmd(contract_name, contract_code, initial_storage, burn_cap))
+      if operation_hash = self.system_operation_hash(self.originate_cmd(contract_name, contract_code, initial_storage, burn_cap))&.[](:operation_hash)
         self.get_receipt(operation_hash).find_originated_contract
       end
     end
@@ -56,8 +57,8 @@ module Tezos
 
     def contract_call(contract_address, parameter, burn_cap)
       if operation_hash = self.system_operation_hash(self.contract_call_cmd(contract_address, parameter, burn_cap))
-        { 'operation_hash' => operation_hash,
-          'receipt' => self.get_receipt(operation_hash) }
+        result_hash = { 'receipt' => self.get_receipt(operation_hash[:operation_hash]).to_a }
+        result_hash.merge operation_hash.stringify_keys
       end
     end
 

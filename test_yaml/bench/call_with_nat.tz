@@ -1,0 +1,21 @@
+parameter unit;
+storage (pair nat address);
+code {
+  CDR;
+  DUP;
+  DUP;
+  DIP {
+    DIP {
+      CDR;
+      CONTRACT nat;
+      ASSERT_SOME;
+      PUSH mutez 0;
+    };
+    CAR;
+    TRANSFER_TOKENS;
+    DIP { NIL operation };
+    CONS;
+  };
+  SWAP;
+  PAIR;
+};

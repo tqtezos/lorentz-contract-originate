@@ -1,0 +1,16 @@
+parameter unit;
+storage unit;
+code {
+  DROP;
+  NIL operation;
+  # create-contract
+  UNIT;
+  PUSH mutez 0;
+  NONE key_hash;
+  CREATE_CONTRACT { parameter unit; storage unit; code { FAILWITH } };
+  DIP { DROP };
+  CONS;
+  # end-create-contract
+  DIP { UNIT };
+  PAIR;
+}

@@ -1,0 +1,381 @@
+config:
+  base-config: &base-config
+    tezos_client_path:
+      "tezos-client -A rpcalpha.tzbeta.net -P 443 -S"
+    user_address:
+      tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr
+    param_path:
+      /Users/michaelklein/Coding/forwarder-contract
+    # stack_path:
+    #   /Users/michaelklein/Coding/forwarder-contract/stack
+
+do:
+  - user:
+      name:
+        Alice
+      address:
+        tz1R3vJ5TV8Y5pVj8dicBR23Zv8JArusDkYr
+
+  - originate: &originate-drop-nat
+      alias: DropNatContract
+      config: $base-config
+      command: print_file.rb drop_nat.tz
+      storage_command: drop_storage.rb
+      initial_storage:
+      burn_cap: '0.295'
+
+  - originate:
+      <<: *originate-drop-nat
+      alias: DropStringContract
+      command: print_file.rb drop_string.tz
+
+  - originate: &originate-nat-caller
+      <<: *originate-drop-nat
+      alias: NatCaller1
+      command: print_file.rb call_with_nat.tz
+      storage_command: call_with_nat_storage.rb
+      initial_storage:
+        value: 1
+        contract: $DropNatContract
+      burn_cap: '0.399'
+  - run: &call-nat-caller
+      alias: CallNatCaller1
+      config: $base-config
+      contract: NatCaller1
+      command: drop_storage.rb
+      parameters:
+      burn_cap: '0.000001'
+
+  - originate:
+      <<: *originate-nat-caller
+      alias: NatCaller2
+      initial_storage:
+        value: 2
+        contract: $DropNatContract
+  - run:
+      <<: *call-nat-caller
+      alias: CallNatCaller2
+      contract: NatCaller2
+
+  - originate:
+      <<: *originate-nat-caller
+      alias: NatCaller4
+      initial_storage:
+        value: 4
+        contract: $DropNatContract
+  - run:
+      <<: *call-nat-caller
+      alias: CallNatCaller4
+      contract: NatCaller4
+
+  - originate:
+      <<: *originate-nat-caller
+      alias: NatCaller8
+      initial_storage:
+        value: 8
+        contract: $DropNatContract
+  - run:
+      <<: *call-nat-caller
+      alias: CallNatCaller8
+      contract: NatCaller8
+
+  - originate:
+      <<: *originate-nat-caller
+      alias: NatCaller16
+      initial_storage:
+        value: 16
+        contract: $DropNatContract
+  - run:
+      <<: *call-nat-caller
+      alias: CallNatCaller16
+      contract: NatCaller16
+
+  - originate:
+      <<: *originate-nat-caller
+      alias: NatCaller32
+      initial_storage:
+        value: 32
+        contract: $DropNatContract
+  - run:
+      <<: *call-nat-caller
+      alias: CallNatCaller32
+      contract: NatCaller32
+
+  - originate:
+      <<: *originate-nat-caller
+      alias: NatCaller64
+      initial_storage:
+        value: 64
+        contract: $DropNatContract
+      burn_cap: '0.4'
+  - run:
+      <<: *call-nat-caller
+      alias: CallNatCaller64
+      contract: NatCaller64
+
+  - originate:
+      <<: *originate-nat-caller
+      alias: NatCaller128
+      initial_storage:
+        value: 128
+        contract: $DropNatContract
+      burn_cap: '0.4'
+  - run:
+      <<: *call-nat-caller
+      alias: CallNatCaller128
+      contract: NatCaller128
+
+  - originate:
+      <<: *originate-nat-caller
+      alias: NatCaller256
+      initial_storage:
+        value: 256
+        contract: $DropNatContract
+      burn_cap: '0.4'
+  - run:
+      <<: *call-nat-caller
+      alias: CallNatCaller256
+      contract: NatCaller256
+
+  - originate:
+      <<: *originate-nat-caller
+      alias: NatCaller512
+      initial_storage:
+        value: 512
+        contract: $DropNatContract
+      burn_cap: '0.4'
+  - run:
+      <<: *call-nat-caller
+      alias: CallNatCaller512
+      contract: NatCaller512
+
+  - originate:
+      <<: *originate-nat-caller
+      alias: NatCaller1024
+      initial_storage:
+        value: 1024
+        contract: $DropNatContract
+      burn_cap: '0.4'
+  - run:
+      <<: *call-nat-caller
+      alias: CallNatCaller1024
+      contract: NatCaller1024
+
+  - originate:
+      <<: *originate-nat-caller
+      alias: NatCaller2048
+      initial_storage:
+        value: 2048
+        contract: $DropNatContract
+      burn_cap: '0.4'
+  - run:
+      <<: *call-nat-caller
+      alias: CallNatCaller2048
+      contract: NatCaller2048
+
+  - originate:
+      <<: *originate-nat-caller
+      alias: NatCaller4096
+      initial_storage:
+        value: 4096
+        contract: $DropNatContract
+      burn_cap: '0.4'
+  - run:
+      <<: *call-nat-caller
+      alias: CallNatCaller4096
+      contract: NatCaller4096
+
+  - originate:
+      <<: *originate-nat-caller
+      alias: NatCaller8192
+      initial_storage:
+        value: 8192
+        contract: $DropNatContract
+      burn_cap: '0.401'
+  - run:
+      <<: *call-nat-caller
+      alias: CallNatCaller8192
+      contract: NatCaller8192
+
+  - originate:
+      <<: *originate-nat-caller
+      alias: NatCaller16384
+      initial_storage:
+        value: 16384
+        contract: $DropNatContract
+      burn_cap: '0.401'
+  - run:
+      <<: *call-nat-caller
+      alias: CallNatCaller16384
+      contract: NatCaller16384
+
+  - originate: &originate-string-caller
+      <<: *originate-nat-caller
+      alias: StringCaller1
+      command: print_file.rb call_with_string.tz
+      storage_command: call_with_string_storage.rb
+      initial_storage:
+        value: "$(printf '1%.0s' {1..1})"
+        contract: $DropStringContract
+      burn_cap: '0.403'
+  - run: &call-string-caller
+      <<: *call-nat-caller
+      alias: CallStringCaller1
+      contract: StringCaller1
+
+  - originate:
+      <<: *originate-string-caller
+      alias: StringCaller2
+      initial_storage:
+        value: "$(printf '1%.0s' {1..2})"
+        contract: $DropStringContract
+      burn_cap: '0.404'
+  - run:
+      <<: *call-string-caller
+      alias: CallStringCaller2
+      contract: StringCaller2
+
+  - originate:
+      <<: *originate-string-caller
+      alias: StringCaller4
+      initial_storage:
+        value: "$(printf '1%.0s' {1..4})"
+        contract: $DropStringContract
+      burn_cap: '0.406'
+  - run:
+      <<: *call-string-caller
+      alias: CallStringCaller4
+      contract: StringCaller4
+
+  - originate:
+      <<: *originate-string-caller
+      alias: StringCaller8
+      initial_storage:
+        value: "$(printf '1%.0s' {1..8})"
+        contract: $DropStringContract
+      burn_cap: '0.41'
+  - run:
+      <<: *call-string-caller
+      alias: CallStringCaller8
+      contract: StringCaller8
+
+  - originate:
+      <<: *originate-string-caller
+      alias: StringCaller16
+      initial_storage:
+        value: "$(printf '1%.0s' {1..16})"
+        contract: $DropStringContract
+      burn_cap: '0.418'
+  - run:
+      <<: *call-string-caller
+      alias: CallStringCaller16
+      contract: StringCaller16
+
+  - originate:
+      <<: *originate-string-caller
+      alias: StringCaller32
+      initial_storage:
+        value: "$(printf '1%.0s' {1..32})"
+        contract: $DropStringContract
+      burn_cap: '0.434'
+  - run:
+      <<: *call-string-caller
+      alias: CallStringCaller32
+      contract: StringCaller32
+
+  - originate:
+      <<: *originate-string-caller
+      alias: StringCaller64
+      initial_storage:
+        value: "$(printf '1%.0s' {1..64})"
+        contract: $DropStringContract
+      burn_cap: '0.466'
+  - run:
+      <<: *call-string-caller
+      alias: CallStringCaller64
+      contract: StringCaller64
+
+  - originate:
+      <<: *originate-string-caller
+      alias: StringCaller128
+      initial_storage:
+        value: "$(printf '1%.0s' {1..128})"
+        contract: $DropStringContract
+      burn_cap: '0.53'
+  - run:
+      <<: *call-string-caller
+      alias: CallStringCaller128
+      contract: StringCaller128
+
+  - originate:
+      <<: *originate-string-caller
+      alias: StringCaller256
+      initial_storage:
+        value: "$(printf '1%.0s' {1..256})"
+        contract: $DropStringContract
+      burn_cap: '0.658'
+  - run:
+      <<: *call-string-caller
+      alias: CallStringCaller256
+      contract: StringCaller256
+
+  - originate:
+      <<: *originate-string-caller
+      alias: StringCaller512
+      initial_storage:
+        value: "$(printf '1%.0s' {1..512})"
+        contract: $DropStringContract
+      burn_cap: '0.914'
+  - run:
+      <<: *call-string-caller
+      alias: CallStringCaller512
+      contract: StringCaller512
+
+  - originate:
+      <<: *originate-string-caller
+      alias: StringCaller1024
+      initial_storage:
+        value: "$(printf '1%.0s' {1..1024})"
+        contract: $DropStringContract
+      burn_cap: '1.426'
+  - run:
+      <<: *call-string-caller
+      alias: CallStringCaller1024
+      contract: StringCaller1024
+
+  - originate:
+      <<: *originate-string-caller
+      alias: StringCaller2048
+      initial_storage:
+        value: "$(printf '1%.0s' {1..2048})"
+        contract: $DropStringContract
+      burn_cap: '2.45'
+  - run:
+      <<: *call-string-caller
+      alias: CallStringCaller2048
+      contract: StringCaller2048
+
+  - originate:
+      <<: *originate-string-caller
+      alias: StringCaller4096
+      initial_storage:
+        value: "$(printf '1%.0s' {1..4096})"
+        contract: $DropStringContract
+      burn_cap: '4.498'
+  - run:
+      <<: *call-string-caller
+      alias: CallStringCaller4096
+      contract: StringCaller4096
+
+  - originate:
+      <<: *originate-string-caller
+      alias: StringCaller8192
+      initial_storage:
+        value: "$(printf '1%.0s' {1..8192})"
+        contract: $DropStringContract
+      burn_cap: '8.594'
+  - run:
+      <<: *call-string-caller
+      alias: CallStringCaller8192
+      contract: StringCaller8192
+

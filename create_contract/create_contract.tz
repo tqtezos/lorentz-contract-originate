@@ -1,0 +1,24 @@
+parameter int;
+storage unit;
+code {
+  CAR;
+  DIP { NIL operation };
+  PUSH bool True;
+  LOOP {
+    DIP {
+      UNIT;
+      PUSH mutez 0;
+      NONE key_hash;
+      CREATE_CONTRACT { parameter unit; storage unit; code { FAILWITH } };
+      DIP { DROP };
+      CONS;
+      PUSH int 1;
+    };
+    SUB;
+    DUP;
+    NEQ;
+  };
+  DROP;
+  DIP { UNIT };
+  PAIR;
+}

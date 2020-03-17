@@ -1,0 +1,229 @@
+config:
+  base-config: &base-config
+    tezos_client_path:
+      "tezos-client -A rpcalpha.tzbeta.net -P 443 -S"
+    user_address:
+      tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm
+    param_path:
+      /Users/michaelklein/Coding/
+    # stack_path:
+    #   /Users/michaelklein/Coding/forwarder-contract/stack
+
+do:
+  - user:
+      name:
+        Bob
+      address:
+        tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm
+
+  - originate: &originate-pack-hash
+      alias: PackHashContract
+      config: $base-config
+      command: print_file.rb pack_hash.tz
+      storage_command: drop_storage.rb
+      initial_storage:
+      burn_cap: '0.307'
+
+  - run: &call-pack-hash
+      alias: CallPackHash
+      config: $base-config
+      contract: PackHashContract
+      command: pack_hash_parameters.rb
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+      burn_cap: '0.000001'
+
+  - originate: &originate-pack-hashes
+      <<: *originate-pack-hash
+      alias: PackHashesContract
+      command: print_file.rb pack_hashes.tz
+      burn_cap: '0.309'
+
+  - run: &call-pack-hashes
+      <<: *call-pack-hash
+      alias: CallPackHashes0
+      contract: PackHashesContract
+      command: pack_hashes_parameters.rb
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 0
+      burn_cap: '0.000001'
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashes1
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 1
+      burn_cap: '0.000001'
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashes2
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 2
+      burn_cap: '0.000001'
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashes3
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 4
+      burn_cap: '0.000001'
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashes4
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 8
+      burn_cap: '0.000001'
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashes5
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 16
+      burn_cap: '0.000001'
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashes6
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 32
+      burn_cap: '0.000001'
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashes7
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 64
+      burn_cap: '0.000001'
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashes8
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 128
+      burn_cap: '0.000001'
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashes9
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 256
+      burn_cap: '0.000001'
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashes10
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 512
+      burn_cap: '0.000001'
+      expect_failure: true
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashesBisect1
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 284
+      burn_cap: '0.000001'
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashesBisect2
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 398
+      burn_cap: '0.000001'
+      expect_failure: true
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashesBisect3
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 341
+      burn_cap: '0.000001'
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashesBisect4
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 369
+      burn_cap: '0.000001'
+      expect_failure: true
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashesBisect5
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 355
+      burn_cap: '0.000001'
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashesBisect6
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 362
+      burn_cap: '0.000001'
+      expect_failure: true
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashesBisect7
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 358
+      burn_cap: '0.000001'
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashesBisect8
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 360
+      burn_cap: '0.000001'
+
+  - run:
+      <<: *call-pack-hashes
+      alias: CallPackHashesBisect9
+      parameters:
+        user: 'tz1bDCu64RmcpWahdn9bWrDMi6cu7mXZynHm'
+        value: 0
+        multiple: 361
+      burn_cap: '0.000001'
+      expect_failure: true
+

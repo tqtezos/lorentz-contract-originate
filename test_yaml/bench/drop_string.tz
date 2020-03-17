@@ -1,0 +1,7 @@
+parameter string;
+storage unit;
+code {
+  CDR;
+  NIL operation;
+  PAIR;
+}

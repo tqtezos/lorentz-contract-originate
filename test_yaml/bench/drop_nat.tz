@@ -1,0 +1,7 @@
+parameter nat;
+storage unit;
+code {
+  CDR;
+  NIL operation;
+  PAIR;
+}
